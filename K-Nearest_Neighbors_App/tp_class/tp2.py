@@ -15,8 +15,6 @@ y_train = np.array([0, 0, 1, 1])
 
 p = np.array([[0.5, 0.15]])  # Doit être 2D pour sklearn
 
-distances = np.sqrt(np.sum((x_train - p) ** 2, axis=1))
-print("Distances :", distances)
 
 k = 3  
 knn = KNeighborsClassifier(n_neighbors=k)
